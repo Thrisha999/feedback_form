@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback</title>
+    <style>
+        fieldset{
+            position:relative;
+            left:500px;
+            width: 550px;
+            height: 1280px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            padding-top: 10px;
+        }
+        #info{
+            margin-left: 20px;
+        }
+        .box{
+            width: 200px;
+            height: 40px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding-left: 10px;
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+        #submit{
+            border: 2px solid grey;
+            border-radius: 5px;
+            width: 250px;
+            height: 45px;
+            position: relative;
+            top: 10px;
+            left: 150px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <form action="*">
+            <h1 align="center">FeedBack Form</h1>
+        <div id="info">
+            <div>
+                <p>Full name</p>
+                <input type="text" placeholder="Enter Your Full name" class="box">
+            </div>
+
+            <div>
+                <p>Email</p>
+                <input type="email" placeholder="Enter Your Mail ID" class="box">
+            </div>
+
+            <div>
+                <p>Age</p>
+                <input type="number" placeholder="Enter Your Age" class="box">
+            </div>
+
+            <div>
+                <p>Phone Number</p>
+                <input type="number" placeholder="Enter Your Mobile Number" class="box">
+            </div>
+
+            <div>
+                <p>Course Platform</p>
+                <select name="course platform" class="box">
+                    <option value="Select">Select</option>
+                    <option value="Cousera">Coursera</option>
+                    <option value="GreatLearning">GreatLearning</option>
+                    <option value="FreeCodeCamp">FreeCodeCamp</option>
+                    <option value="Apna College">Apna College</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Course Name</p>
+                <input type="text" placeholder="Enter Course Name" class="box">
+            </div>
+
+            <div>
+                <p>Level of Knowledge(Beginning)</p>
+                <select name="knowledge" class="box">
+                    <option value="Select">Select</option>
+                    <option value="Beginer">Beginer</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advance">Advance</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Level of Knowledge(Ending)</p>
+                <select name="knowledge2" class="box">
+                    <option value="Select">Select</option>
+                    <option value="Beginer">Beginer</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advance">Advance</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Would you recommend the Platform where you learnt the course?</p>
+                <label for="1"><input type="radio" name="course" id="1">Yes</label>
+                <label for="2"><input type="radio" name="course" id="2">No</label>
+            </div>
+
+            <div>
+                <p>How would you rate your overall experience</p>
+                <label for="bad"><input type="radio" name="review2" id="bad">Bad</label>
+                <label for="average"><input type="radio" name="review2" id="average">Average</label>
+                <label for="good"><input type="radio" name="review2" id="good">Good</label>
+                <label for="excellent"><input type="radio" name="review2" id="excellent">Excellent</label>
+            </div>
+
+            <div>
+                <p>Comments</p>
+                <textarea name="comments" id="" cols="25" rows="8">Comments..!!</textarea>
+            </div>
+
+            <button id="submit" onclick="alert('Submitted Successfully')">Submit</button>
+        </div>
+        </form>
+    </fieldset>
+</body>
+</html>
